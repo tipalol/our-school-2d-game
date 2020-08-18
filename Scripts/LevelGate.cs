@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Подключаем стандартную библиотеку Юнити
+using UnityEngine;
+//Подключаем пространство имен для работы со сценами
 using UnityEngine.SceneManagement;
 
 public class LevelGate : MonoBehaviour
@@ -7,7 +9,7 @@ public class LevelGate : MonoBehaviour
     public string SceneName;
 
     //Если кто-то столкнулся с нами
-    void OnTriggerEnter2D(Collider2D collision) 
+    private void OnTriggerEnter2D(Collider2D collision) 
     {
         //Если этот кто-то - игрок
         if (collision.name == "Player")

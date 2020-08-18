@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Подключаем стандартную библиотеку Юнити
+using UnityEngine;
+//Подключаем пространство имен для работы с событиями
 using UnityEngine.Events;
 
 public class Booster : MonoBehaviour
@@ -7,7 +9,7 @@ public class Booster : MonoBehaviour
     public UnityEvent OnPlayerEnter;
 
     //Если кто-то касается нас
-    void OnTriggerEnter2D(Collider2D collision) 
+    private void OnTriggerEnter2D(Collider2D collision) 
     {
         //Если этот кто-то - игрок
         if (collision.name == "Player")

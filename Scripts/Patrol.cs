@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Подключаем стандартную библиотеку Юнити
+using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Patrol : MonoBehaviour
     private int _target;
 
     //Выполняется один раз на старте
-    void Start()
+    private void Start()
     {
         //Говорим, что сейчас идем к самой первой точке (нумерация начинается с нуля)
         _target = 0;
@@ -23,7 +24,7 @@ public class Patrol : MonoBehaviour
     }
 
     //Выполняется каждый кадр
-    void Update()
+    private void Update()
     {
         //Если достигли нужной позиции
         if (Self.position.x == Points[_target].position.x) 

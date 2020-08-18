@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Подключаем стандартную библиотеку Юнити
+using UnityEngine;
+//Подключаем пространство имен для работы с событиями
 using UnityEngine.Events;
 
 public class EnemyController : MonoBehaviour
@@ -7,7 +9,7 @@ public class EnemyController : MonoBehaviour
     public UnityEvent OnPlayerTouched;
 
     //Если с кем-то столкнулись
-    void OnCollisionEnter2D(Collision2D collision) 
+    private void OnCollisionEnter2D(Collision2D collision) 
     {
         //Если этот кто-то - игрок
         if (collision.collider.name == "Player")

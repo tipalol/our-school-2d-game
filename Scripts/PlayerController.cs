@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Подключаем стандартную библиотеку Юнити
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
